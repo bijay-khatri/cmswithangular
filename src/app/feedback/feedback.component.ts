@@ -18,6 +18,9 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['./feedback.component.css']
 })
 export class FeedbackComponent implements OnInit {
+  emailAddress : string;
+  feedbackMessage: string;
+
   emailFormControl = new FormControl('', [
     Validators.required,
     Validators.email,
@@ -29,8 +32,20 @@ export class FeedbackComponent implements OnInit {
   ngOnInit() {
   }
 
+  shouldDisable(): boolean {
+    return !this.emailAddress || !this.feedbackMessage;
+  }
+
   closeDialog(){
     this.dialogRef.close("ok");
+  }
+
+  submitFeedback(){
+    let data = {
+      email: this.emailAddress,
+      feedback: this.feedbackMessage
+    };
+    console.log(data);
   }
 
 }

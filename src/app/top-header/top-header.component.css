@@ -27,10 +27,16 @@
 }
 
 .ppn-top-header__sub-container--item{
-    padding: .2rem;
-    border-bottom: 1px solid rgb(162, 86, 192);
+    font-size: .8rem;
 }
 
-.ppn-top-header__sub-container:last-child{
-    border-bottom: none;
+.nav-header__first{
+    color:rgb(162, 86, 192);
+    font-size: .9rem;
+}
+
+.nav-header__last{
+    color: #444;
+    font-size:1.2rem;
+    margin-left: -5px;
 }

@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import {Router} from '@angular/router';
 
 import {AppRoutingModule} from './app-routing.module';
+import {HttpModule} from '@angular/http';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
@@ -53,7 +54,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
     MatInputModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,84 @@
+{
+    "menu": [
+        {
+            "id": 1,
+            "slug": "home",
+            "name": {
+                "en": "Home",
+                "np": "गृह पृष्ठ "
+            },
+            "order": 1,
+            "active": true,
+            "subMenuId": 0
+        },
+        {
+            "id": 2,
+            "slug": "headline",
+            "name": {
+                "en": "Headline",
+                "np": "मूख्य खबर "
+            },
+            "order": 2,
+            "active": true,
+            "subMenuId": 0
+        },
+
+        {
+            "id": 3,
+            "slug": "trending",
+            "name": {
+                "en": "Trending",
+                "np": "ताजा खबरहरु "
+            },
+            "order": 3,
+            "active": true,
+            "subMenuId": 0
+        },
+
+        {
+            "id": 4,
+            "slug": "entertainment",
+            "name": {
+                "en": "Entertainment",
+                "np": "मनोरन्जन"
+            },
+            "order": 4,
+            "active": true,
+            "subMenuId": 0
+        },
+
+        {
+            "id": 5,
+            "slug": "sports",
+            "name": {
+                "en": "Sports",
+                "np": "खेलकूद"
+            },
+            "order": 6,
+            "active": true,
+            "subMenuId": 0
+        },
+
+        {
+            "id": 6,
+            "slug": "crime",
+            "name": {
+                "en": "Crime",
+                "np": "अपराध"
+            },
+            "order": 6,
+            "active": true,
+            "subMenuId": 0
+        },{
+            "id": 7,
+            "slug": "politics",
+            "name": {
+                "en": "Politics",
+                "np": "राजनीति"
+            },
+            "order": 5,
+            "active": true,
+            "subMenuId": 0
+        }
+    ]
+}

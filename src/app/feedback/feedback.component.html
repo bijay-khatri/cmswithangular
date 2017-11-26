@@ -1,7 +1,7 @@
 <form class="example-form" fxLayout="column">
   <h3>Sending feedback to PalPalNepal Private Limited</h3>
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="Email" [formControl]="emailFormControl" [errorStateMatcher]="matcher">
+    <input [(ngModel)]= "emailAddress" matInput placeholder="Email" [formControl]="emailFormControl" [errorStateMatcher]="matcher" name="emailAddress">
     <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
       Please enter a valid email address
     </mat-error>
@@ -11,11 +11,11 @@
     </mat-error>
   </mat-form-field>
   <mat-form-field class="example-full-width">
-    <textarea matInput placeholder="Leave a comment"></textarea>
+    <textarea [(ngModel)]="feedbackMessage" matInput placeholder="Enter your feedback" name="feedbackMessage" required></textarea>
   </mat-form-field>
   <div fxLayout="row" fxLayoutAlign="space-between">
       <button (click) = "closeDialog()" mat-button color="primary">Cancel</button>
-      <button  mat-button color="secondary">Submit</button>
+      <button (click) = "submitFeedback()" [disabled] ="shouldDisable()" mat-button color="secondary">Submit</button>
   </div>
   
 </form>

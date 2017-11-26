@@ -1,6 +1,6 @@
 <nav fxLayout="row" fxLayoutWrap fxLayout.sm="column" fxLayout.xs="column" 
   fxLayoutAlign="space-between" class="ppn-navbar-container">
-  <a routerLink="/home" (click)="setActiveMenuItem('home')">
+  <!-- <a routerLink="/home" (click)="setActiveMenuItem('home')">
     <i *ngIf="activeMenuItem === 'home'" class="material-icons ppn-navbar-container__item--small">play_arrow</i>
     Home
   </a>
@@ -10,5 +10,9 @@
   <a>Literature</a>
   <a>Crime</a>
   <a>Technology</a>
-  <a>Science</a>
+  <a>Science</a> -->
+  <a [routerLink]="[item.slug]" (click)="setActiveMenuItem(item.slug)"
+     *ngFor="let item of menuList">
+     <i *ngIf="activeMenuItem === item.slug" class="material-icons ppn-navbar-container__item--small">play_arrow</i>{{item.name.np}}
+    </a>
   </nav>

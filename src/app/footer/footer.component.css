@@ -3,8 +3,22 @@
     background: rgb(34, 32, 32);
 }
 
-.ppn-footer-item mat-list, .ppn-footer-item mat-list-item {
+.ppn-footer-item , mat-list, .ppn-footer-item mat-list-item {
     color: #fff;
     font-size: .8rem;
     padding-left: 2rem;
+}
+.ppn-footer__aboutus--header{
+    padding-left: 2rem;
+    padding-bottom: .1rem;
+    color: #fff;
+}
+.ppn-footer__aboutus--description{
+    color: #fff;
+    font-size: .8rem;
+    padding-left: 2rem;
+}
+
+.ppn-footer__contactus--item--clickable{
+    cursor: pointer;
 }

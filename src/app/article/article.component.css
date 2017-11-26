@@ -41,3 +41,13 @@
     color: rgb(148, 148, 148);
     font-size: .8rem;
 }
+
+.ppn-article-container__item__title{
+    cursor: pointer;
+}
+
+.ppn-article-container__item__title:hover{
+    font-weight: 700;
+    color: rgb(95, 95, 202);
+    transition: all .3s;
+}

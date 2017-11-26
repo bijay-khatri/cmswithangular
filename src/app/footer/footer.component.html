@@ -1,23 +1,23 @@
 <footer fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="2rem" class="ppn-footer-container">
     <section fxFlex class="ppn-footer-item">
-        <mat-list>
-            <mat-list-item>Item 1</mat-list-item>
-            <mat-list-item>Item 2</mat-list-item>
-            <mat-list-item>Item 3</mat-list-item>
-        </mat-list>
+        <h4 class="ppn-footer__aboutus--header">About Us</h4>
+        <p class="ppn-footer__aboutus--description">
+            PalpalNepal private limited is a result of young and innovative good human beings gathering together for sharing the right
+            news to right audience at right time.
+        </p>
+    </section>
+    <section fxFlex class="ppn-footer-item">
+        <h4 class="ppn-footer__contactus--header">Ways to connect to us</h4>
+        <div fxLayout="column">
+            <div class="ppn-footer__contactus--item--clickable" (click)="feedback()">Feedback</div>
+        </div>
     </section>
     <section fxFlex class="ppn-footer-item">
         <mat-list>
             <mat-list-item>Item 1</mat-list-item>
             <mat-list-item>Item 2</mat-list-item>
             <mat-list-item>Item 3</mat-list-item>
-        </mat-list>
-    </section>
-    <section fxFlex class="ppn-footer-item">
-        <mat-list>
-            <mat-list-item (click)="feedback()">Feedback</mat-list-item>
-            <mat-list-item>Item 2</mat-list-item>
-            <mat-list-item>Item 3</mat-list-item>
+            <mat-list-item>Item 4</mat-list-item>
         </mat-list>
     </section>
 </footer>
