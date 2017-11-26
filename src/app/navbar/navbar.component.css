@@ -1,0 +1,13 @@
+.ppn-navbar-container{
+    background: #9058a7;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.ppn-navbar-container a, .ppn-navbar-container a:link, .ppn-navbar-container a:visited  {
+    text-decoration: none;
+    color: #fff;
+}
+.ppn-navbar-container__item--small{
+    font-size: x-small;
+}

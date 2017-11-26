@@ -1,0 +1,14 @@
+<nav fxLayout="row" fxLayoutWrap fxLayout.sm="column" fxLayout.xs="column" 
+  fxLayoutAlign="space-between" class="ppn-navbar-container">
+  <a routerLink="/home" (click)="setActiveMenuItem('home')">
+    <i *ngIf="activeMenuItem === 'home'" class="material-icons ppn-navbar-container__item--small">play_arrow</i>
+    Home
+  </a>
+  <a routerLink="/politics" (click)="setActiveMenuItem('politics')">
+      <i *ngIf="activeMenuItem === 'politics'" class="material-icons ppn-navbar-container__item--small">play_arrow</i>
+      Politics</a>
+  <a>Literature</a>
+  <a>Crime</a>
+  <a>Technology</a>
+  <a>Science</a>
+  </nav>

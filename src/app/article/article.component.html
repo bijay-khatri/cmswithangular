@@ -1,0 +1,15 @@
+<mat-card fxLayoutWrap class="ppn-article-container">
+  <h3 fxFlex="100" class="ppn-article-container__item__title">News Title will be here</h3>
+  <div fxFlex="50">
+    <img [src]="imagePath" alt="Image" class="ppn-article-container__item__image">
+  </div>
+  <div fxFlex="50" class="ppn-article-container__item__author--small">
+    Dipesh KC, 2017-07-09
+  </div>
+  <div fxFlex="100">
+      Follow the instructions to embed the icon font in your site and learn how to style your icons using CSS.
+  </div>
+  <div fxFlex="100" fxLayout="row" fxLayoutAlign="end row">
+      <button mat-button color="primary" (click)="readMore(1)">Read More</button>
+  </div>
+</mat-card>

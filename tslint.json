@@ -118,13 +118,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "ppn",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "ppn",
       "kebab-case"
     ],
     "angular-whitespace": [true, "check-interpolation"],

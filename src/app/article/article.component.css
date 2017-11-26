@@ -1,0 +1,43 @@
+.ppn-article-container{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.ppn-article-container__default{
+    height: 200px;
+    width: 300px;
+    border: 1px solid #aabbcc;
+}
+
+.ppn-article-container__small{
+    height: 100px;
+    width: 200px;
+    border: 1px solid #aabbcc;
+}
+
+.ppn-article-container__medium{
+    height: 200px;
+    width: 250px;
+    border: 1px solid #aabbcc;
+}
+
+.ppn-article-container__large{
+    height: 300px;
+    width: 400px;
+    border: 1px solid #aabbcc;
+}
+
+.ppn-article-container__x-large{
+    height: 400px;
+    width: 500px;
+    border: 1px solid #aabbcc;
+}
+
+.ppn-article-container__item__image{
+    height: 50px;
+    width: 50px;
+}
+
+.ppn-article-container__item__author--small{
+    color: rgb(148, 148, 148);
+    font-size: .8rem;
+}
