@@ -1,5 +1,5 @@
 <div fxLayout="row" fxLayoutAlign="end center" class="ppn-top-header__container">
-  <div fxFlex="80" fxFlex.sm="50" class="ppn-top-header__container--site-title">PalPalNepal</div>
+  <div fxFlex="85" fxFlex.md="80" fxFlex.lg="90" fxFlex.sm="50" class="ppn-top-header__container--site-title">पलपल नेपाल</div>
   <div fxFlex="" fxLayoutAlign="space-between" class="ppn-top-header__container--icons">
     <div class="ppn-top-header__container--icons--hover">
       <i class="material-icons">phone</i>
@@ -8,12 +8,13 @@
       <i class="material-icons" >email</i>
     </div>
     <div (click)="expandMenu()" class="ppn-top-header__container--icons--hover">
-      <i class="material-icons">menu</i>
+      <i class="material-icons">details</i>
     </div>
   </div>
 </div>
-<div fxLayout="column" fxLayoutAlign="center end" class="ppn-top-header__sub-container" *ngIf="expandedMenuClicked">
-  <div (click)="handleSubMenu('Item1')" class="ppn-top-header__sub-container--item">Item1</div>
-  <div (click)="handleSubMenu('Item2')" class="ppn-top-header__sub-container--item">Item1</div>
-  <div (click)="handleSubMenu('Item3')" class="ppn-top-header__sub-container--item">Item1</div>  
-</div>
+
+<mat-list *ngIf="expandedMenuClicked" fxLayout="column" fxLayoutAlign="center end" class="ppn-top-header__sub-container">
+    <mat-list-item  (click)="handleSubMenu('Item1')" class="ppn-top-header__sub-container--item">Item 1</mat-list-item>
+    <mat-list-item (click)="handleSubMenu('Item2')" class="ppn-top-header__sub-container--item">Item 2</mat-list-item>
+    <mat-list-item (click)="handleSubMenu('Item3')" class="ppn-top-header__sub-container--item">Item 3</mat-list-item>
+  </mat-list>

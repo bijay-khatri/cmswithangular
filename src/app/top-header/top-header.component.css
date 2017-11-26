@@ -1,15 +1,15 @@
 .ppn-top-header__container--icons {
-    background: rgb(144, 88, 167);
-    color: #fff;
-    padding: .5rem;
+    color: rgb(144, 88, 167);
+    padding: .2rem;
     margin: 0;
+    height: 40px;
 }
 
 .ppn-top-header__container--site-title {
     color: rgb(113, 67, 133);
-    font-weight: bolde;
-    padding: .5rem;
-    font-size: 2rem;
+    font-weight: bold;
+    padding: .2rem;
+    font-size: 1.5rem;
 }
 
 .ppn-top-header__container--icons--hover{
@@ -17,8 +17,8 @@
 }
 
 .ppn-top-header__container--icons--hover :hover{
-    border-bottom: 2px solid #fff;
-    transition: all .5s;
+    border-bottom: 2px solid rgb(144, 88, 167);
+    transition: all .3s;
 }
 
 .ppn-top-header__sub-container{
@@ -27,6 +27,10 @@
 }
 
 .ppn-top-header__sub-container--item{
-    padding: .5rem;
+    padding: .2rem;
     border-bottom: 1px solid rgb(162, 86, 192);
+}
+
+.ppn-top-header__sub-container:last-child{
+    border-bottom: none;
 }

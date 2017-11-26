@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 
 /** Error when invalid control is dirty, touched, or submitted. */
@@ -23,9 +24,13 @@ export class FeedbackComponent implements OnInit {
   ]);
 
   matcher = new MyErrorStateMatcher();
-  constructor() { }
+  constructor(public dialogRef: MatDialogRef<FeedbackComponent>) { }
 
   ngOnInit() {
+  }
+
+  closeDialog(){
+    this.dialogRef.close("ok");
   }
 
 }

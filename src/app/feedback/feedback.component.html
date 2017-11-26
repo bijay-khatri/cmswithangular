@@ -14,8 +14,8 @@
     <textarea matInput placeholder="Leave a comment"></textarea>
   </mat-form-field>
   <div fxLayout="row" fxLayoutAlign="space-between">
-      <button mat-button color="primary">Cancel</button>
-      <button mat-button color="secondary">Submit</button>
+      <button (click) = "closeDialog()" mat-button color="primary">Cancel</button>
+      <button  mat-button color="secondary">Submit</button>
   </div>
   
 </form>

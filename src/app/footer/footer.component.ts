@@ -16,7 +16,9 @@ export class FooterComponent implements OnInit {
   }
 
   feedback(){
-    this.dialog.open(FeedbackComponent);
+    this.dialog.open(FeedbackComponent).afterClosed().subscribe(res =>{
+      console.log("Dialog was closed", res);
+    });
   }
 
 }
