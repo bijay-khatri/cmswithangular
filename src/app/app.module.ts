@@ -18,6 +18,8 @@ import {MatInputModule} from '@angular/material/input';
 
 import {FlexLayoutModule} from '@angular/flex-layout';
 
+import {MenuService} from './services/menu-service/menu.service';
+
 import { AppComponent } from './app.component';
 import { TopHeaderComponent } from './top-header/top-header.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -57,7 +59,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
     ReactiveFormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
